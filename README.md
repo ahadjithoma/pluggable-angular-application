@@ -1,8 +1,9 @@
 # AngularPluginArchitecture
 
-Example of building AOT compiled Angular 7 plugin that can be consumed on client and server sides(SSR)
+Example of building AOT compiled Angular 9 plugin and load during runtime.
 
-For Angular 8 see [cli8](https://github.com/alexzuza/angular-plugin-architecture/tree/cli8)  branch
+Based on article [Building an extensible Dynamic Pluggable Enterprise Application with Angular](https://medium.com/angular-in-depth/building-extensible-dynamic-pluggable-enterprise-application-with-angular-aed8979faba5) and this repo [AngularPluginArchitecture](https://github.com/jfgouda/angular-plugin-architecture)
+
 
 ## Setup
 
