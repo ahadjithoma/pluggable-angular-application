@@ -1,0 +1,17 @@
+<h1>Example of building AOT compiled plugin</h1>
+
+<button (click)="increase()" >+1</button>
+<button (click)="decrease()" >-1</button>
+<span>Counter: {{store.data$ | async}}</span>
+
+
+<div>
+
+<button (click)="loadPlugin('plugin2')">Load plugin2</button>
+<button (click)="loadPlugin('plugin3')">Load plugin3</button>
+<button (click)="loadComponent()">Load Comp</button>
+
+  <div class="plugins">
+    <ng-template #targetRef></ng-template>
+  </div>
+</div>
