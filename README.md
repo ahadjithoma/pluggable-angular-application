@@ -1,27 +1,44 @@
-# PluggableApp
+# AngularPluginArchitecture
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
+Example of building AOT compiled Angular 7 plugin that can be consumed on client and server sides(SSR)
 
-## Development server
+For Angular 8 see [cli8](https://github.com/alexzuza/angular-plugin-architecture/tree/cli8)  branch
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Setup
 
-## Code scaffolding
+```
+npm install 
+or 
+yarn install
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Building shared plugin (currently i am not using any shared plugin)
 
-## Build
+```
+npm run build:shared
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Building plugins
 
-## Running unit tests
+```
+npm run build:plugins
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Build index.ts of the builder (usefull if you change only the index.ts but don't wanna build all plugins)
 
-## Running end-to-end tests
+```
+npm run posinstall
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Run
 
-## Further help
+Dev mode
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```
+npm start
+```
+
+
+## License
+
+MIT
